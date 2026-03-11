@@ -3,7 +3,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    Note right of borwser:  User creates a new note on the page and clicks save
+    Note right of browser:  User creates a new note on the page and clicks save
     browser->>server: Post https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server-->>browser: HTTP 302 Redirect to /notes
